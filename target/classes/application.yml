@@ -1,0 +1,22 @@
+#spring:
+#  application:
+#    name: spring-rabbitmq
+#  rabbitmq:
+#    host: 192.168.0.185
+#    port: 15672
+#    username: spatome
+#    password: spatome
+debug: true
+
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+#    virtual-host: cloud
+    username: guest
+    password: guest
+    listener:
+      simple:
+        concurrency: 10
+        max-concurrency: 10
+        prefetch: 5
